@@ -24,6 +24,7 @@ GEM
       thread_safe
     bounded_context (0.38.1)
     concurrent-ruby (1.1.5)
+    diff-lcs (1.3)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     i18n (1.6.0)
@@ -43,11 +44,26 @@ GEM
       rails_event_store_active_record (= 0.38.1)
       ruby_event_store (= 0.38.1)
       ruby_event_store-browser (= 0.38.1)
+    rails_event_store-rspec (0.38.1)
+      rspec (~> 3.0)
     rails_event_store_active_record (0.38.1)
       activemodel (>= 3.0)
       activerecord-import (~> 0.21)
       activesupport (>= 3.0)
       ruby_event_store (= 0.38.1)
+    rspec (3.8.0)
+      rspec-core (~> 3.8.0)
+      rspec-expectations (~> 3.8.0)
+      rspec-mocks (~> 3.8.0)
+    rspec-core (3.8.0)
+      rspec-support (~> 3.8.0)
+    rspec-expectations (3.8.2)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.8.0)
+    rspec-mocks (3.8.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.8.0)
+    rspec-support (3.8.0)
     ruby_event_store (0.38.1)
       concurrent-ruby (~> 1.0)
     ruby_event_store-browser (0.38.1)
@@ -68,6 +84,7 @@ PLATFORMS
 
 DEPENDENCIES
   rails_event_store (~> 0.38.1)
+  rails_event_store-rspec
 
 BUNDLED WITH
    2.0.1
